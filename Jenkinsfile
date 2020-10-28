@@ -1,8 +1,8 @@
 pipeline {​​​​​
     agent any
     tools {​​​​​
-        maven 'maven'
-        jdk 'jdk11'
+        maven 'Maven'
+        jdk 'JDK'
     }​​​​​
     parameters {​​​​​
         booleanParam(name: "Perform release ?", description: '', defaultValue: false)
@@ -31,10 +31,3 @@ pipeline {​​​​​
 
         }
         ​​​​
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
-    }
-}
