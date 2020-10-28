@@ -8,11 +8,7 @@ pipeline {​​​​​
         booleanParam(name: "Perform release ?", description: '', defaultValue: false)
     }​​​​​
     stages {​​
-        stage('Example')​​​{
-         steps {
-                        sh 'mvn --version'
-                    }
-        }
+        ​​​
         stage('Initialize') {​​​​​
             steps {​​​​​
                 sh '''
